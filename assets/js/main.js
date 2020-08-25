@@ -13,6 +13,7 @@
   $('.navbar-toggler').on('click', function() {
     if (!$('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
+      $('.logo-head').attr('src', 'images/logo-header.svg')
     }
   })
 
@@ -100,7 +101,9 @@
     if ($(window).scrollTop() > pixels) {
       $('.navbar-expand-md').addClass('navbar-reduce');
       $('.navbar-expand-md').removeClass('navbar-trans');
+      $('.logo-head').attr('src', 'images/logo-header.svg')
     } else {
+      $('.logo-head').attr('src', 'images/logo-white.svg')
       if (!$('#navbarDefault').hasClass('show')) {
         $('.navbar-expand-md').removeClass('navbar-reduce');
       }

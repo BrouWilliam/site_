@@ -1,0 +1,23 @@
+@media (max-width: 567px){
+    img.logo-icon{
+        max-width: 50px !important;
+        max-height: 50px !important;
+    }
+    .logos .row .col-6:nth-child(13),
+    .logos .row .col-6:nth-child(14){
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+    header.header-empresa{
+        height: 50vh;
+    }
+    header .content h1{
+        font-size: 2em;
+    }
+    section.contato{
+        margin: 0 !important;
+    }
+    section.contato .col-lg-6,
+    section.contato .col-lg-4{
+        margin-top: 0 !important;
+    }
+}

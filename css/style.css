@@ -8,6 +8,10 @@
   --text-color: #777;
 }
 
+.text-color{
+  color: var(--text-color) !important;
+}
+
 a:hover{
   text-decoration: none !important;
 }
@@ -43,6 +47,11 @@ h2{
 /*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
+
+.navbar img{
+  width: 100%;
+  max-height: 50px;
+}
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
@@ -242,7 +251,7 @@ h2{
 
 
 
-header {
+header{
     background-image: url(../images/background-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -258,6 +267,7 @@ header  .content h1{
     color: white;
     font-weight: bold;
     font-size: 3em;
+    letter-spacing: 2px;
 }
 header .content a{
     background: var(--primary-color);
@@ -510,6 +520,11 @@ section.treinamento{
   }
 }
 
+section.treinamento a.btnSaibaMais{
+  background: white;
+  color: var(--second-color);
+}
+
 /* ===== clientes =====*/
 section.clientes {
   padding: 5em 0;
@@ -557,4 +572,90 @@ section.blog .content h6 span{
 
 footer{
   background: rgb(212, 212, 212);
+}
+footer .col-md-6 img{
+  max-height: 100px;
+}
+footer h5{
+  font-weight: 600;
+}
+footer ul li a{
+  color: black;
+}
+footer ul li a:hover{
+  color: var(--text-color);
+}
+
+/* ===== empresa ===== */
+header.header-empresa{
+  background-image: url(../images/background-header.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ===== Treinamento =====*/
+.page-treinamento{
+    padding: 5em 0;
+    padding: 5em 0px 90px 0px;
+    
+}
+
+/* ===== Contato =====*/
+section.contato{
+  margin: 5em 0;
+}
+section.contato .col-lg-6{
+  background: #b7b7b726;
+  padding: 2em;
+}
+section.contato .col-lg-6 .info .row{
+  margin: 2em 0 !important;
+}
+section.contato .col-lg-6 ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section.contato .col-lg-6 ul li a{
+  color: black;
+}
+section.contato .col-lg-6 .icon{
+  margin-right: 1em;
+}
+section.contato .col-lg-6 .icon img{
+  width: 30px;
+  height: 30px;
+}
+
+section.contato form input, section.contato form textarea{
+  width: 100%;
+  padding: .375rem .75rem;
+  border: none;
+  border-radius: 7px;
+  
+}
+section.contato form input::placeholder, section.contato form textarea::placeholder{
+  
+}
+section.contato  .col-lg-4{
+  padding: 2em;
+  background: #00a73726;
+}
+section.contato form button{
+  background: var(--primary-color);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+section.contato form button:hover{
+  background: var(--second-color);
+  color: white;
 }
