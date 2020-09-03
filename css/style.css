@@ -7,7 +7,9 @@
 
   --text-color: #777;
 }
-
+.text-gren-second{
+  color: var(--second-color) !important;
+}
 .text-color {
   color: var(--text-color) !important;
 }
@@ -49,8 +51,7 @@ h2 {
 --------------------------------------------------------------*/
 
 .navbar img {
-  width: 100%;
-  max-height: 50px;
+  max-height: 70px;
 }
 .navbar-b {
   transition: all 0.5s ease-in-out;
@@ -293,6 +294,9 @@ header .content a:hover {
 /* ===== Quem somos =====*/
 section.quem-somos {
   margin: 5em 0;
+}
+section.quem-somos p{
+  font-size: 0.95em;
 }
 
 /* ===== Serviços =====*/
@@ -694,4 +698,54 @@ section.contato form button {
 section.contato form button:hover {
   background: var(--second-color);
   color: white;
+}
+
+
+/* ===== BLOG ===== */
+header.header-blog {
+  background-image: url(../images/background-header.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+header.header-blog h1{
+  font-size: 1.5em !important;
+  text-align: center;
+}
+
+/* ===== Compartilhar ===== */
+div.compartilhar{
+  display: flex;
+}
+div.compartilhar ul{
+  margin-left: 1em;
+}
+div.compartilhar ul li{
+  margin: 0 0.5em;
+}
+div.compartilhar ul li a i.fa-facebook{
+  color: white;
+  background: #0956b5;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10em;
+}
+ div.compartilhar ul li a i.fa-whatsapp{
+  color: white;
+  background: #2ba13a;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10em;
 }

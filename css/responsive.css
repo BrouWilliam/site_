@@ -20,4 +20,15 @@
     section.contato .col-lg-4{
         margin-top: 0 !important;
     }
+    .navbar img {
+        width: 100%;
+        max-height: 50px;
+      }
+      header.header-blog{
+        height: auto;
+        padding: 8rem 0;
+      }
+      header.header-blog{
+        line-height: 1.4;
+      }
 }
