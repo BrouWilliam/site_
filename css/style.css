@@ -749,3 +749,15 @@ div.compartilhar ul li a i.fa-facebook{
   align-items: center;
   border-radius: 10em;
 }
+
+
+/* =====  Botão WhatsApp ===== */
+.button-whatsapp{
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.button-whatsapp img{
+  max-width: 50px;
+  max-height: 50px;
+}
